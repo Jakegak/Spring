@@ -2,7 +2,14 @@ package Entyties;
 
 public class Student {
 
-	public void sayHello(){
-		System.out.println("Hello from spring framework.....");
+	private String studentName;
+
+	public String getStudentName() {
+		return studentName;
 	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
+
 }
