@@ -1,9 +1,14 @@
 package Entyties;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Student {
 
 	private String studentName;
 
+	@Autowired
+	private Address address;
+	
 	public String getStudentName() {
 		return studentName;
 	}
@@ -11,13 +16,17 @@ public class Student {
 	public void setStudentName(String studentName) {
 		this.studentName = studentName;
 	}
-	
-	public void studentInit(){
-		System.out.println("The init method has been called.....");
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
 	}
 	
-	public void studentDestroy(){
-		System.out.println("The destroy method has been called......");
+	public void showInfo(){
+		System.out.println("The address is " + address.getAddress());
 	}
 
 }
