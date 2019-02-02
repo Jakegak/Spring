@@ -4,8 +4,8 @@ public class Address {
 
 	private String Address;
 
-	public Address() {
-		Address = "Kasarani mwiki road";
+	public Address(String address) {
+		this.Address = address;
 	}
 	
 	public String getAddress() {
@@ -13,7 +13,7 @@ public class Address {
 	}
 
 	public void setAddress(String address) {
-		Address = address;
+		this.Address = address;
 	};
 
 }
